@@ -1,0 +1,5 @@
+y_pre=merge_data2
+df=y_pre
+df.loc[df['target'] > 9, 'target'] = 3
+y = df["target"].values
+print(y)
