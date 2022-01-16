@@ -1,7 +1,7 @@
 import cv2
 
 # Load image, convert to grayscale, and find edges
-image = cv2.imread('./Dataset_AVNIR2/train/electrophoresis/new_name_9.jpg')
+image = cv2.imread('./____your_pass_____/new_name_9.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU + cv2.THRESH_BINARY)[1]
 
@@ -20,5 +20,5 @@ cv2.imshow('ROI',ROI)
 cv2.imwrite('ROI.png',ROI)
 cv2.waitKey()
 # save resulting masked image
-cv2.imwrite('./Dataset_AVNIR2/train/output/output.jpg',ROI)
-plt.imshow(plt.imread("./Dataset_AVNIR2/train/output/output.jpg"))
+cv2.imwrite('./____your_pass_____/output.jpg',ROI)
+plt.imshow(plt.imread("./____your_pass_____/output.jpg"))
